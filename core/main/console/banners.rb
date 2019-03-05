@@ -93,6 +93,7 @@ module Banners
 
       # display the public hook URL and Admin UI URL
       if configuration.get("beef.http.public")
+        proto = configuration.get("beef.http.public_proto") || 'http'
         host = configuration.get('beef.http.public')
         port = configuration.get("beef.http.public_port") || configuration.get('beef.http.port')
         print_info 'Public:'

@@ -51,6 +51,7 @@ beef:
         # Reverse Proxy / NAT
         # If you want BeEF to be accessible behind a reverse proxy or NAT,
         #   set both the publicly accessible hostname/IP address and port below:
+        #public_proto: "http" # Enables using an HTTPS reverse proxy without configuring BeEF for HTTPS
         #public: ""      # public hostname/IP address
         #public_port: "" # public port (experimental)
 
